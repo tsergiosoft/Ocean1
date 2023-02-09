@@ -6,12 +6,12 @@ from flask import Flask, render_template, request, url_for, flash, redirect, Res
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'your secret key'
-messages = [{'title': 'Message One',
+messages = [{'title': 'Message One test1',
              'content': 'Message One Content'},
             {'title': 'Message Two',
              'content': 'Message Two Content'}
             ]
-
+app.run(debug=True)
 
 @app.route('/')
 @app.route('/index/')
@@ -40,6 +40,6 @@ def create():
 
     return render_template('create.html')
 
-if __name__ == '__main__':
-    app.run()
-    app.debug = True
+# if __name__ == '__main__':
+#     app.run()
+#     app.debug = True
