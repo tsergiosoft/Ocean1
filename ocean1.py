@@ -6,7 +6,7 @@ from flask import Flask, render_template, request, url_for, flash, redirect, Res
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'your secret key'
-messages = [{'title': 'Message One test_123',
+messages = [{'title': 'Message One test_1235',
              'content': 'Message One Content'},
             {'title': 'Message Two',
              'content': 'Message Two Content'}
